@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* header */
+#header{
+    width: 20%;
+    height: 100vh;
+    float: left;
+    background-color: #00365C;
+}
+ul,li{
+    list-style: none;
+}
+
+#logo{
+    background-color: #4897CF;
+    text-align: center;
+    height: 12vh;
+}
+
+#logo h2{
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+}
+#header ul{
+    margin-top: 10vh;
+    width: 100%;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+.list{
+    display: flex;
+    height: 10vh;
+    padding-left: 60px;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+}
+.activel{
+    background-color: #0D4872;
+    border-left: 10px solid #469AC8;
+    padding-left: 50px;
+}
+.bi{
+    padding-right: 20px;
+    font-size: 30px;
+}
+/* end header */
+
+/* main */
+#main{
+    width: auto;
+    height: 100vh;
+    background-color: #F8F8F8;
+    transition: 0.3s ease-in-out;
+}
+
+#line-b{
+    width: 100%;
+    background-color: white;
+    height: 12vh;
+    box-shadow: lightgray 3px 5px 8px 5px;
+    text-align: right;
+    z-index: -1;
+}
+#line-b h2{
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 900;
+    padding-right: 100px;
+}
+
+/* Search */
+
+.search{
+    background-color: white;
+    width: 65%;
+    border-radius: 30px;
+    margin: auto;
+    justify-content: start;
+    display: flex;
+    margin-top: 5vh;
+    align-items: center;
+    box-shadow: lightgray 3px 5px 8px 5px;
+    height: 6vh;
+}
+
+#m-search{
+    border: none;
+    padding: 2px;
+    padding-left: 15px;
+    outline: none;
+    width: 90%;
+    font-size: 20px;
+}
+.search .bi{
+    color: #BABABA;
+    font-size: 25px;
+    margin-left: 40px;
+    padding: 0;
+}
+
+
+input::placeholder{
+    font-size: 20px;
+}
+
+/* end search */
+
+
+/* filter */
+.fl-ser{
+    transition: 0.3s;
+}
+.filters{
+    margin-left: 28%;
+    margin-top: 3vh;
+}
+.filters ul{
+    display: flex;
+    align-items: center;
+}
+.filters ul li{
+    font-size: 20px;
+    padding: 2px 15px 5px 15px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+.active{
+    background-color: #4B96CF;
+    color: white;
+    border-radius: 30px;
+}
+/* end filter */
+/* End main */
+
+#table{
+    width: 65%;
+    margin: auto;
+    height: 60vh;
+    margin-top: 5vh;
+    overflow-y: scroll !important;
+    border: none;
+    
+}
+.tableb{
+    width: 80%;
+    margin: auto;
+    height: 88vh;
+    overflow-y: scroll !important;
+    border: none;
+}
+#table::-webkit-scrollbar {
+    width: 0;
+}
+.tableb::-webkit-scrollbar {
+    width: 0;
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+.head-text{
+    position: sticky;
+    top: 0;
+    background-color: #00365C;
+    color: white;
+    border:none;
+    height: 5vh;
+}
+table tr{
+    height: 10vh;
+    border-bottom: 3px solid #C4C4C4;
+    background-color: white;
+}
+
+.t-img{
+    background-image: url(img/1.png);
+    background-position: center;
+    background-size: 70%;
+    width: 100px;
+    transition: 0.4s;
+}
+.t-img:hover{
+    background-size: 110%;
+}
+
+.window{
+    display: none;
+}
+.w-active{
+    display: block;
+}
+
+/* block-f */
+.block-f{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+}
+.block-f h2{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #4897CF;
+    margin: auto;
+    margin-top: 5vh;
+    
+}
+.aut-table{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #0D4872;
+    border-radius: 30px;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+}
+
+.aut-table input{
+    background-color: white;
+    border: 0;
+    outline: none;
+    padding: 10px 20px 10px 50px ;
+    font-size: 20px;
+    border-radius: 30px;
+    position: relative;
+}
+.aut-table input::placeholder{
+    color: #BABABA;
+}
+.aut-table label{
+    margin: 10px 5px 5px 10px;
+}
+.aut-table .bi{
+    position: absolute;
+    color: #BABABA;
+    top: 85px;
+    left: 55px;
+}
+.sec{
+    top: 170px !important;
+}
+.bi-telephone-fill{
+    top: 265px !important;
+    font-size: 25px;
+}
+.bi-envelope-fill{
+    top: 350px !important;
+    font-size: 28px;
+}
+.bi-lock-fill{
+    top: 435px !important;
+}
+.lsec{
+    top: 520px !important;
+}
