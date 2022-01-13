@@ -248,24 +248,64 @@ table tr{
 }
 .aut-table .bi{
     position: absolute;
-    color: #BABABA;
+    color: #BABABA !important;
     top: 85px;
     left: 55px;
+    z-index: 9;
 }
 .sec{
     top: 170px !important;
 }
 .bi-telephone-fill{
-    top: 265px !important;
+    top:  170px!important;
     font-size: 25px;
+    
 }
 .bi-envelope-fill{
-    top: 350px !important;
+    top:265px  !important;
     font-size: 28px;
 }
 .bi-lock-fill{
-    top: 435px !important;
+    top:350px  !important;
 }
 .lsec{
-    top: 520px !important;
+    top:435px  !important;
+}
+button{
+    background-color: white;
+    border: none;
+    font-size: 22px;
+    padding: 0px 10px 5px 10px;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    background-color: #4B96CF;
+    color: white;
+    font-weight: 700;
+}
+.sec-t{
+    margin-top: 20vh;
+}
+.send{
+    width: 120px;
+    text-align: center;
+    padding: 10px !important;
+    background-color:#4B96CF !important ;
+    color: white;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.spes{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 25px;
+}
+.aut-table a{
+    color: white;
+    margin-top: 20px;
+    margin-right: 15px;
 }
